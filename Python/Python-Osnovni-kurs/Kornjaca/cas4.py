@@ -126,5 +126,54 @@ for i in range(n):         # ponovi n puta:
 # Zvijezda
 # https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#id30
 '''
+import turtle
+for i in range(5):         # ponovi 5 puta:
+    turtle.forward(100)                       #   idi napred 100 koraka
+    turtle.right(144)                       #   okreni se nadesno 144 stepena
+'''
 
+# Slovo L
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#l
+'''
+import turtle as t
+t.right(90)
+t.forward(100)
+t.left(90)
+t.forward(50)
+'''
+
+# Ćirilično slovo i
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#id34
+'''
+from turtle import *
+right(90)
+forward(100)
+left(135)
+forward(141)
+right(135)
+forward(100)
+'''
+
+# Plavo-crvena linija
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#id36
+'''
+from turtle import *
+for i in range(5):
+    color("blue")
+    forward(20)
+    color("red")
+    forward(20)
+'''
+
+# Otisci kornjače u tjemenima n-tougla
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#n
+'''
+import turtle as t
+n = 6
+t.shape("turtle")
+t.penup()
+for i in range(n):
+    t.forward(100)
+    t.left(360/n)
+    t.stamp()
 '''
