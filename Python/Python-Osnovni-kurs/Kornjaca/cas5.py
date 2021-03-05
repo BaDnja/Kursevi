@@ -39,5 +39,84 @@ for i in range(3):
 # Komplikovanija zvijezda
 # https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas5#id11
 '''
+import turtle
+m = 20
+n = 3
+turtle.speed(0)
+for i in range(m):
+    turtle.color("red")
+    for j in range(n):
+        turtle.forward(60)
+        turtle.left(120)
+    turtle.color("black")
+    turtle.forward(10)
+    turtle.left(18)
+'''
 
+# Deset kvadrata
+'''
+import turtle
+a = 10
+turtle.speed(6)
+turtle.width(2)
+for i in range(10):
+    for j in range(4):
+        turtle.forward(a)
+        turtle.left(90)
+    a = a + 10
+'''
+
+# PROCEDURE
+# Procedura za crtanje mnogougla
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas5#id15
+'''
+# procedura za crtanje pravilnog poligona
+# parametri su broj stranica poligona n i duzina stranice a
+def poligon(n, a):
+    for i in range(n):             # n puta ponovi:
+        turtle.forward(a)          #    idi napred a koraka
+        turtle.right(360 / n)      #    okreni se za spoljasnji ugao n-tostranog pravilnog poligona
+'''
+
+# Četiri kvadrata
+'''
+import turtle
+ugao = 90
+
+def kvadrat(n):
+    for i in range(4):
+        turtle.forward(n)
+        turtle.left(90)
+
+def cetiri_kvadrata(angle):
+    for i in range(4):
+        kvadrat(100)
+        turtle.left(angle)
+        
+cetiri_kvadrata(ugao)
+'''
+
+# TORKE/LISTE
+# Šareni kvadrat - petlja
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas5#id24
+'''
+import turtle
+boje = ("red", "green", "", "yellow")
+for i in range(4):      # ponovi 4 puta:
+    turtle.color(boje[i])    #   postavi boju na i-ti element torke boja
+    turtle.forward(100)     #   idi napred 100 koraka
+    turtle.left(90)        #   okreni se nalevo za 90 stepeni
+'''
+
+# Zvijezda bez presijecanja
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas5#id26
+'''
+import turtle
+uglovi = (72, -144)
+for i in range(10):          # ponovi 10 puta:
+    turtle.forward(40)         #    idi napred 40 koraka
+    if i % 2 == 0:
+    	turtle.left(uglovi[0])     #    okreni se ulevo za naredni od dva ugla iz liste
+    else:
+        turtle.left(uglovi[1])
 '''
