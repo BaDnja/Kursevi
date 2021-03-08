@@ -120,3 +120,52 @@ for i in range(10):          # ponovi 10 puta:
     else:
         turtle.left(uglovi[1])
 '''
+
+# Domaći zadatak
+# Šareni oblik
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas5#id29
+'''
+import turtle
+
+turtle.speed(0)
+turtle.width(5)
+for i in range(120):
+    if i % 3 == 0:
+        turtle.color("red")
+        turtle.forward(50)
+        turtle.left(31)
+        turtle.color("green")
+        turtle.forward(70)
+        turtle.left(71)
+        turtle.color("blue")
+        turtle.forward(90)
+        turtle.left(101)
+'''
+
+# Kvadrat šarenih ivica
+# https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas5#id31
+'''
+import turtle
+
+turtle.width(10)
+
+def sarena_duz(n, a, boja1, boja2):
+    for i in range(n):
+        if i % 2 == 0:
+            turtle.color(boja1)
+        else:
+            turtle.color(boja2)
+        turtle.forward(a)
+
+
+sarena_duz(11, 10, "red", "blue")
+turtle.left(90)
+sarena_duz(11, 10, "yellow", "green")
+turtle.left(90)
+sarena_duz(11, 10, "purple", "orange")
+turtle.left(90)
+sarena_duz(11, 10, "black", "green")
+turtle.left(90)
+'''
+
+
